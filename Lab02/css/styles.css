@@ -1,0 +1,171 @@
+/* ==========================================================================
+   1. Reseteo Global y Modelo de Caja
+   ========================================================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eef2f5;
+    color: #2d3748;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* ==========================================================================
+   2. Estructura de la Tarjeta (Card Container)
+   ========================================================================== */
+.card-container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 550px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.card-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.card-header h2 {
+    color: #1a365d;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.card-header p {
+    color: #718096;
+    font-size: 0.95rem;
+}
+
+/* ==========================================================================
+   3. Bloques Fieldset y Legend
+   ========================================================================== */
+.form-section {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.form-section legend {
+    font-weight: 600;
+    color: #2b6cb0;
+    padding: 0 8px;
+    font-size: 0.95rem;
+}
+
+/* ==========================================================================
+   4. Estilos de Controles e Inputs
+   ========================================================================== */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #4a5568;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    color: #2d3748;
+    background-color: #fff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-textarea {
+    resize: vertical;
+}
+
+/* Opciones de Radio y Checkbox */
+.radio-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.radio-label,
+.checkbox-label {
+    font-size: 0.9rem;
+    color: #4a5568;
+    cursor: pointer;
+}
+
+.checkbox-group {
+    margin-top: 10px;
+}
+
+/* ==========================================================================
+   5. Estados Interactivos (Pseudo-clases)
+   ========================================================================== */
+
+/* Pseudo-clase :focus */
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+    border-color: #3182ce;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.2);
+}
+
+/* Estilos de Botones */
+.form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-primary {
+    background-color: #2b6cb0;
+    color: #ffffff;
+}
+
+/* Pseudo-clase :hover */
+.btn-primary:hover {
+    background-color: #2c5282;
+}
+
+/* Pseudo-clase :active */
+.btn-primary:active {
+    transform: scale(0.98);
+}
+
+/* Pseudo-clase :disabled */
+.btn-disabled {
+    background-color: #e2e8f0;
+    color: #a0aec0;
+    cursor: not-allowed;
+}
+
+.btn-disabled:hover {
+    background-color: #e2e8f0; /* No cambia en hover */
+}
